@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+           
+            background-color:  lightgray;
+           
+        }
+       
+      nav {
+        background: aliceblue;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      nav li {
+        margin: 0;
+        padding: 0;
+      }
+      nav a {
+        font-size: large;
+        padding: 20px;
+        display: block;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        margin: 0 20px;
+      }
+      nav a:hover {
+        background-color: rgb(167, 190, 199);
+        border-bottom: 3px solid rgb(211, 211, 240);
+        transition: 0.2s ease;
+      }
+      
+        
+       
+        
+
+    
+    
+        form {
+            
+           margin-left: 590px;
+        }
+
+        label {
+            color: black;
+        }
+
+        input {
+            height: 30px;
+            width: 300px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: gray;
+            color: rgb(32, 3, 3);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        header{
+            text-align: center;
+            background-color: #525557;
+            color: white;
+            padding: 2px 0;
+            margin: 0 ;
+        }
+
+
+
+    
+</style>
+        <nav>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="About.html">About</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Contact Me</h1>
+    </header>
+<br>
+    <form>
+        <div class="container">
+            <label for="firstName">First Name</label><br>
+            <input type="text" id="firstName" name="FirstName" placeholder="Your First Name"><br>
+
+            <label for="lastName">Last Name</label><br>
+            <input type="text" id="lastName" name="LastName" placeholder="Your Last Name"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="Email" placeholder="Please enter your Email Id"><br>
+
+            <label for="contactNo">ContactNo</label><br>
+            <input type="tel" id="contactNo" name="ContactNo" placeholder="Please enter your Contact No"><br>
+
+            <label for="message">Message</label><br>
+            <input type="text" id="message" placeholder="Type your message here"><br>
+            
+            <button type="button" class="btn">SUBMIT</button>
+        </div>
+    </form>
+
+   
+</body>
+</html>
