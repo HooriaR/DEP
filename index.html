@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(girl2.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+nav {
+  background: palevioletred;
+  height: 80px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 17px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: lavender;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+li a:hover {
+  background-color: hotpink;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon i {
+  color: white;
+}
+
+.abc {
+  font-size: 40px;
+  margin-top: 15%;
+  margin-left: 10%;
+  text-align: center;
+  color: black;
+}
+
+.xyz {
+  font-size: 40px;
+  margin-left: 10%;
+  text-align: center;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  background: hotpink;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  margin-left: 50%;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: deeppink;
+}
+    </style>
+ <nav>
+    <label class="logo">Tiny Trendz</label>
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="active"><a href="shop.php">Shop Now</a></li>
+    </ul>
+      <div class="icon">
+        <a href="cart.php" style="position: relative;">
+            <i class="fa fa-shopping-cart" style="font-size: 35px;"></i>
+        </a>
+      
+  </nav>
+
+
+</head>
+<body>
+
+<h1 class="abc">Welcome to Tiny Trendz Fashion.</h1>
+<h2 class="xyz">Discover the world of Adorable Styles.</h2>
+<a href="shop.php" class="btn">Explore &#8594;</a>
+
+</body>
+</html>
