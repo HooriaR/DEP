@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername= "localhost";
     $username= "root";
@@ -25,9 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
         $sql= "DELETE FROM items";
         $conn->query($sql);
-
-        header("Location: thankyou.html");
-        exit();
+        echo "<script>
+        alert('Order placed successfully');
+        window.location.href=' thankyou.html';
+    </script>";
+        
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

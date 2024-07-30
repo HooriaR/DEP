@@ -36,6 +36,13 @@ $conn->close();
     <title>Cart</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    p{
+        text-align:center;
+        font-size:17px;
+
+    }
+</style>
 </head>
 <body>
     <nav>

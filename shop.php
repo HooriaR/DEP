@@ -181,14 +181,14 @@ if ($result->num_rows>0) {
         flex-wrap: wrap;
       }
       .cart-count {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: red;
-            color: white;
-            border-radius: 50%;
-            padding: 2px 6px;
-            font-size: 12px;
+        position: absolute;
+  top: 10px;
+  right: 10px;
+  background: deeppink;
+  color: white;
+  border-radius: 30px;
+  padding: 2px 6px;
+  font-size: 15px;
         }
     </style>
 </head>

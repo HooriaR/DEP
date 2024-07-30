@@ -16,9 +16,11 @@ $product_name= $conn->real_escape_string($_POST['product_name']);
 $sql="DELETE FROM items WHERE name='$product_name'";
 
 if ($conn->query($sql)=== TRUE) {
+    echo "<script>
+    alert('Item removed');
+    window.location.href=' cart.php';
+</script>";
 
-header("Location: cart.php?message=Item%20removed%20successfully");
-    exit();
 } else {
     echo "Error: " . $conn->error;
 }
