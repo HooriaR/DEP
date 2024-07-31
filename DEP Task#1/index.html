@@ -7,10 +7,17 @@
 
     <style>
       body {
-        background-color:  lightgray;
+        background-image: url(backgorund.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
       }
+
       nav {
-        background: aliceblue;
+        background: dodgerblue;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 5px 0;
         display: flex;
         justify-content: center;
       }
@@ -19,7 +26,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       nav li {
         margin: 0;
@@ -35,7 +42,7 @@
         margin: 0 20px;
       }
       nav a:hover {
-        background-color: rgb(167, 190, 199);
+        background-color: #4998ee;
         border-bottom: 3px solid rgb(211, 211, 240);
         transition: 0.2s ease;
       }
@@ -44,44 +51,43 @@
         margin-top: 0;
         font-size: 35px;
         margin-left: 350px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       h1 {
         margin-left: 350px;
         font-size: 50px;
         font-family: Arial, Helvetica, sans-serif;
-        color: crimson;
+        color: rgb(63, 48, 150);
       }
       .xyz {
-        font-size: 16px;
+        font-size: 15px;
         margin-left: 350px;
         text-align: justify;
-        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
       .btn {
         display: inline-block;
-        background: rgba(97, 97, 94, 0.705);
-        color: #fff;
+        background-color: #007bff;
+        color: white;
+
         padding: 10px 30px;
         margin: 10px 0;
         border-radius: 30px;
         margin-left: 350px;
         transition: background 0.2s;
         text-decoration: none;
-        
+        font-family: Geneva, Tahoma, sans-serif;
       }
       .btn:hover {
-        background-color: crimson;
+        background-color: #0056b3;
       }
       .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 80px;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
+        max-width: 800px;
+        margin: 70px auto;
       }
       .image {
         width: 50%;
@@ -92,9 +98,9 @@
       }
       .image img {
         position: absolute;
-        height: 240%;
+        height: 270%;
         left: 10%;
-        border-radius: 20%;
+        border-radius: 50%;
         bottom: 130%;
       }
     </style>
@@ -106,19 +112,27 @@
       </ul>
     </nav>
   </head>
+
   <body>
     <div class="container">
       <div class="text">
-          <h2 class="abc">Hi, I am</h2>
-          <h1>Hooria </h1>
-          <p class="xyz">Web developer from Pakistan I am a passionate and dedicated third-semester web development student with a strong foundation in HTML, CSS, and JavaScript. Eager to apply my knowledge and skills to real-world projects, I am committed to continuous learning and professional growth in the field of web development. With a keen eye for detail and a drive for excellence, I am excited to contribute to innovative web solutions and collaborate with a dynamic team to create user-friendly and aesthetically pleasing websites.</p>
-          <a href="About.html" class="btn">About Me</a>
+        <h2 class="abc">Hi, I am</h2>
+        <h1>Hooria</h1>
+        <p class="xyz">
+          Web developer from Pakistan I am a passionate and dedicated
+          third-semester web development student with a strong foundation in
+          HTML, CSS, and JavaScript. Eager to apply my knowledge and skills to
+          real-world projects, I am committed to continuous learning and
+          professional growth in the field of web development. With a keen eye
+          for detail and a drive for excellence, I am excited to contribute to
+          innovative web solutions and collaborate with a dynamic team to create
+          user-friendly and aesthetically pleasing websites.
+        </p>
+        <a href="About.html" class="btn">About Me</a>
       </div>
       <div class="image">
-          <img src="girl1.jpg" alt="Profile picture">
+        <img src="girl1.jpg" alt="Profile picture" />
       </div>
-  </div>
+    </div>
   </body>
 </html>
-
-
