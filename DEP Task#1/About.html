@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <style>
-        body {
-        background-color:  lightgray;
-      }
         
-        nav {
-        background: aliceblue;
+    body {
+  background-image: url(backgorund.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+      
+nav {
+        background: dodgerblue;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
         display: flex;
         justify-content: center;
       }
@@ -19,7 +26,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       nav li {
         margin: 0;
@@ -35,73 +42,70 @@
         margin: 0 20px;
       }
       nav a:hover {
-        background-color: rgb(167, 190, 199);
+        background-color:#4998ee;
         border-bottom: 3px solid rgb(211, 211, 240);
-        transition: 0.3s ease;
+        transition: 0.2s ease;
       }
-      .header1, .header2 {
+     
+      .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+            background:ghostwhite;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 36px;
             text-align: center;
-            padding: 3px 0;
-            margin: 0;
-            
+            margin-bottom: 20px; 
+            color: rgb(63, 48, 150);
         }
-        .header1 {
-            background-color: #525557;
-            color: white;
+        .section {
+            margin-bottom: 30px;
         }
-        .header2 {
-            background-color: #525557;
-            color: white;
+        .section p,
+        .section ol {
+            font-size: 15px;
+            line-height: 1.9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        .section1, .section2 {
-            margin: 2em auto;
-            padding: 2em;
-            max-width: 900px;
-            background: white;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        .section p{
+            text-align: justify;
         }
-        .section1 p, .section2 ol {
-            margin: 0;
-            line-height: 1.6;
+        .section ol {
+            padding-left: 30px;
         }
-        .section2 ol {
-            padding-left: 1.2em;
+        .section ol li {
+            margin-bottom: 10px;
         }
-        .section2 li {
-            margin-bottom: 0.5em;
-            font-size: 16px;
-        }
-        </style>
+    </style>
 
-
-</head>
-<body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="About.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </head>
+<body>
 
-    <header class="header1">
-        <h1>About Me</h1>
-    </header>
-
-    <section class="section1">
-        <p>I am a passionate and creative individual with a strong enthusiasm for Web development. Currently in my third semester, I am embarking on an exciting journey to explore the world of coding, design, and technology. I enjoy tackling challenges that help me grow and finding new ways to make websites better for users. I'm focused on learning both front-end and back-end technologies to create strong applications that really matter. I look forward to working with teams where I can contribute ideas.</p>
-    </section>
-
-    <header class="header2">
-        <h1>Skills</h1>
-    </header>
-
-    <section class="section2">
-        <ol>
-            <li>C++</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ol>
-    </section>
+    <div class="container">
+        <div class="section">
+            <h1 class="title">About Me</h1>
+            <p>I am a passionate and creative individual with a strong enthusiasm for web development. Currently in my third semester, I am embarking on an exciting journey to explore the world of coding, design, and technology. I enjoy tackling challenges that help me grow and finding new ways to make websites better for users. I'm focused on learning both front-end and back-end technologies to create strong applications that really matter. I look forward to working with teams where I can contribute ideas.</p>
+        </div>
+        <div class="section">
+            <h1 class="title">Skills</h1>
+            <ol>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </div>
+    </div>
 </body>
 </html>
