@@ -1,18 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>About</title>
     <style>
         body {
-           
-            background-color:  lightgray;
-           
-        }
-       
-      nav {
-        background: aliceblue;
+  background-image: url(backgorund.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+      
+nav {
+        background: dodgerblue;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
         display: flex;
         justify-content: center;
       }
@@ -21,7 +26,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       nav li {
         margin: 0;
@@ -37,88 +42,110 @@
         margin: 0 20px;
       }
       nav a:hover {
-        background-color: rgb(167, 190, 199);
+        background-color:#4998ee;
         border-bottom: 3px solid rgb(211, 211, 240);
         transition: 0.2s ease;
       }
-      
-        
-       
-        
 
-    
-    
-        form {
-            
-           margin-left: 590px;
-        }
-
-        label {
-            color: black;
-        }
-
-        input {
-            height: 30px;
-            width: 300px;
-            margin-bottom: 10px;
-            padding: 5px;
-        }
-
-        .btn {
-            background-color: gray;
-            color: rgb(32, 3, 3);
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        header{
-            text-align: center;
-            background-color: #525557;
-            color: white;
-            padding: 2px 0;
-            margin: 0 ;
-        }
-
-
-
-    
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(63, 48, 150);
+}
+.section {
+  margin-bottom: 30px;
+}
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: rgb(63, 48, 150);
+}
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: rgb(63, 48, 150);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+.form-group button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-group button:hover {
+  background-color: #357ABD;
+}
 </style>
-        <nav>
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="active"><a href="About.html">About</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    
+
+<nav>
+  <ul>
+    <li class="active"><a href="index.html">Home</a></li>
+    <li class="active"><a href="About.html">About</a></li>
+    <li class="active"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 </head>
+
 <body>
-    
-    <header class="header">
-        <h1>Contact Me</h1>
-    </header>
-<br>
-    <form>
-        <div class="container">
-            <label for="firstName">First Name</label><br>
-            <input type="text" id="firstName" name="FirstName" placeholder="Your First Name"><br>
 
-            <label for="lastName">Last Name</label><br>
-            <input type="text" id="lastName" name="LastName" placeholder="Your Last Name"><br>
-
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="Email" placeholder="Please enter your Email Id"><br>
-
-            <label for="contactNo">ContactNo</label><br>
-            <input type="tel" id="contactNo" name="ContactNo" placeholder="Please enter your Contact No"><br>
-
-            <label for="message">Message</label><br>
-            <input type="text" id="message" placeholder="Type your message here"><br>
-            
-            <button type="button" class="btn">SUBMIT</button>
-        </div>
-    </form>
-
-   
+<div class="container">
+<div class="section">
+  <h1 class="title">Contact Me</h1>
+ 
+<div class="section">
+  <h2>Contact Form</h2>
+  <form action="#" method="post">
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+          <button type="submit">Send Message</button>
+      </div>
+  </form>
+</div>
+</div>
 </body>
 </html>
